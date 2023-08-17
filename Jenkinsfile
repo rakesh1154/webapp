@@ -7,7 +7,7 @@ pipeline {
     git 'git'
   }
     parameters {
-  string defaultValue: 'master', name: 'branch'
+  string defaultValue: 'dev', name: 'branch'
 }
     stages {
         stage('package') {
