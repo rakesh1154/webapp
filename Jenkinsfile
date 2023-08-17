@@ -7,9 +7,9 @@ pipeline {
     git 'git'
   }
     stages {
-        stage('validate') {
+        stage('package') {
             steps {
-                sh 'mvn validate'
+                sh 'mvn package'
             }
         }
     }
