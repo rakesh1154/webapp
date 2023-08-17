@@ -6,6 +6,9 @@ pipeline {
     maven 'maven'
     git 'git'
   }
+    parameters {
+  string defaultValue: 'master', name: 'branch'
+}
     stages {
         stage('package') {
             steps {
