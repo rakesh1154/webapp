@@ -1,6 +1,6 @@
 pipeline {
     agent {
-      label 'jenkfile-node'
+      label 'jenkinfile-node'
     }
   tools{
     maven 'maven'
